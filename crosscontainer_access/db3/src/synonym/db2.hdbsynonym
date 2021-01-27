@@ -1,0 +1,8 @@
+{
+  "PurchaseOrderHeader": {
+    "target": {
+      "object": "PurchaseOrderHeader",
+      "schema": "DB2_1"
+    }
+  }
+} 

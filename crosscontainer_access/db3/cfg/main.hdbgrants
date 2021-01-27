@@ -1,0 +1,10 @@
+{
+	"hdi-db2-service": {
+		"object_owner": {
+			"container_roles": ["DB2_grants::ZS_Container_Access_grant#"]
+		},
+		"application_user": {
+			"container_roles": ["DB2::ZS_Container_Access"]
+		}
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"role": {
+		"name": "DB2::ZS_Container_Access",
+		"schema_privileges": [{
+			"privileges": ["SELECT","SELECT METADATA","EXECUTE"]
+		}]
+	}
+}   

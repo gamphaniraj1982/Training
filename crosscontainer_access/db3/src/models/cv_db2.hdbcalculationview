@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="cv_db2" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="cv_db2"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PurchaseOrderHeader">
+    <resourceUri>PurchaseOrderHeader</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="PurchaseOrderHeader">
+  <attributes>
+    <attribute id="PURCHASEORDERID" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PURCHASEORDERID"/>
+      <keyMapping columnObjectName="PurchaseOrderHeader" columnName="PURCHASEORDERID"/>
+    </attribute>
+    <attribute id="CREATEDBY" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Created By"/>
+      <keyMapping columnObjectName="PurchaseOrderHeader" columnName="CREATEDBY"/>
+    </attribute>
+    <attribute id="CREATEDAT" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Created Date"/>
+      <keyMapping columnObjectName="PurchaseOrderHeader" columnName="CREATEDAT"/>
+    </attribute>
+    <attribute id="CHANGEDBY" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Changed By"/>
+      <keyMapping columnObjectName="PurchaseOrderHeader" columnName="CHANGEDBY"/>
+    </attribute>
+    <attribute id="CHANGEDAT" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Change Date"/>
+      <keyMapping columnObjectName="PurchaseOrderHeader" columnName="CHANGEDAT"/>
+    </attribute>
+    <attribute id="NOTEID" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Notes"/>
+      <keyMapping columnObjectName="PurchaseOrderHeader" columnName="NOTEID"/>
+    </attribute>
+    <attribute id="PARTNER" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Supplier"/>
+      <keyMapping columnObjectName="PurchaseOrderHeader" columnName="PARTNER"/>
+    </attribute>
+    <attribute id="CURRENCY" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Currency"/>
+      <keyMapping columnObjectName="PurchaseOrderHeader" columnName="CURRENCY"/>
+    </attribute>
+    <attribute id="GROSSAMOUNT" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Gross Amount"/>
+      <keyMapping columnObjectName="PurchaseOrderHeader" columnName="GROSSAMOUNT"/>
+    </attribute>
+    <attribute id="NETAMOUNT" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Net Amount"/>
+      <keyMapping columnObjectName="PurchaseOrderHeader" columnName="NETAMOUNT"/>
+    </attribute>
+    <attribute id="TAXAMOUNT" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Tax Amount"/>
+      <keyMapping columnObjectName="PurchaseOrderHeader" columnName="TAXAMOUNT"/>
+    </attribute>
+    <attribute id="LIFECYCLESTATUS" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Lifecycle Status"/>
+      <keyMapping columnObjectName="PurchaseOrderHeader" columnName="LIFECYCLESTATUS"/>
+    </attribute>
+    <attribute id="APPROVALSTATUS" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Approval Status"/>
+      <keyMapping columnObjectName="PurchaseOrderHeader" columnName="APPROVALSTATUS"/>
+    </attribute>
+    <attribute id="CONFIRMSTATUS" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Confirmation Status"/>
+      <keyMapping columnObjectName="PurchaseOrderHeader" columnName="CONFIRMSTATUS"/>
+    </attribute>
+    <attribute id="ORDERINGSTATUS" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Ordering Status"/>
+      <keyMapping columnObjectName="PurchaseOrderHeader" columnName="ORDERINGSTATUS"/>
+    </attribute>
+    <attribute id="INVOICINGSTATUS" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Invoicing Status"/>
+      <keyMapping columnObjectName="PurchaseOrderHeader" columnName="INVOICINGSTATUS"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>
