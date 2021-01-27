@@ -1,0 +1,8 @@
+{
+	"role": {
+		"name": "DB2_grants::ZS_Container_Access_grant#",
+		"schema_privileges": [{
+			"privileges_with_grant_option": ["SELECT","SELECT METADATA","EXECUTE","INSERT","UPDATE","CREATE ANY","CREATE TEMPORARY TABLE","EXECUTE","DELETE"]
+		}]
+	}
+}

@@ -1,0 +1,57 @@
+ID: crosscontainer_access
+_schema-version: '2.1'
+version: 0.0.1
+modules:
+  - name: db1
+    type: hdb
+    path: db1
+    requires:
+      - name: hdi_db1
+        properties:
+          TARGET_CONTAINER: '~{hdi-db1-container-name}'
+  - name: db2
+    type: hdb
+    path: db2
+    requires:
+      - name: hdi_db2
+        properties:
+          TARGET_CONTAINER: '~{hdi-db2-container-name}'
+      - name: hdi_db1
+        group: SERVICE_REPLACEMENTS
+        properties:
+          key: hdi-db1-service
+          service: '~{hdi-db1-container-name}'
+  - name: db3
+    type: hdb
+    path: db3
+    requires:
+      - name: hdi_db3
+        properties:
+          TARGET_CONTAINER: '~{hdi-db3-container-name}'
+      - name: hdi_db2
+        group: SERVICE_REPLACEMENTS
+        properties:
+          service: '~{hdi-db2-container-name}'
+          key: hdi-db2-service
+resources:
+  - name: hdi_db1
+    parameters:
+      config:
+        schema: db1
+    properties:
+      hdi-db1-container-name: '${service-name}'
+    type: com.sap.xs.hdi-container
+  - name: hdi_db2
+    parameters:
+      config:
+        schema: db2
+    properties:
+      hdi-db2-container-name: '${service-name}'
+    type: com.sap.xs.hdi-container
+  - name: hdi_db3
+    parameters:
+      config:
+        schema: db3
+    properties:
+      hdi-db3-container-name: '${service-name}'
+    type: com.sap.xs.hdi-container

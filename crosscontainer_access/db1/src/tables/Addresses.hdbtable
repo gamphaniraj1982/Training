@@ -1,0 +1,10 @@
+COLUMN TABLE "Addresses" (
+     "ADDRESSID" INTEGER ,
+	 "CITY" VARCHAR(40) COMMENT 'City',
+	 "POSTALCODE" NVARCHAR(10) COMMENT 'Postal Code',
+	 "STREET" NVARCHAR(60) COMMENT 'Street',
+	 "BUILDING" NVARCHAR(10) COMMENT 'Building Number',
+	 "COUNTRY" NVARCHAR(3) COMMENT 'Country',
+	 "REGION" NVARCHAR(4) COMMENT 'Region Otherwise Known as State in some countries',
+	 "ADDRESSTYPE" NVARCHAR(2) COMMENT 'Address Type',
+	 PRIMARY KEY ("ADDRESSID"))

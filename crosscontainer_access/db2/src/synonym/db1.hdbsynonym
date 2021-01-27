@@ -1,0 +1,8 @@
+{
+  "Addresses": {
+    "target": {
+      "object": "Addresses",
+      "schema": "DB1_1"
+    }
+  }
+}
